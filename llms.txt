@@ -1,12 +1,15 @@
 # GenAI Span Mapper MCP
 
-Paid remote MCP for OpenTelemetry GenAI span mapping, provider normalization, missing attribute detection, dashboard schemas, and mapping receipts.
+GenAI Span Mapper is a paid remote MCP schema mapper for OpenTelemetry GenAI spans, provider attributes, missing fields, dashboard schemas, and mapping receipts.
 
 Website: https://genaispanmapper.clauxel.com/
+Docs pattern reference: https://github.com/clauxel/MiroFish
+Primary keyword: GenAI span mapping MCP
+Type: MCP
+Default plan: Team
 MCP endpoint: https://genaispanmapper.clauxel.com/mcp
 Server card: https://genaispanmapper.clauxel.com/server-card.json
-Docs: https://github.com/clauxel/genai-span-mapper-mcp
-
-Use case: Normalize GenAI spans before dashboards tell competing stories.
-Authentication: Bearer token required for production use.
+Registry name: com.clauxel.genaispanmapper/genaispanmapper-mcp
 Tools: map_genai_span_fields, normalize_provider_attributes, detect_missing_genai_attributes, issue_mapping_receipt, export_observability_schema
+
+Public boundary: docs-only repository; no production source code or secrets.
