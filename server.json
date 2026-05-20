@@ -1,13 +1,11 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.genaispanmapper/genaispanmapper-mcp",
-  "description": "GenAI Span Mapper is a paid remote MCP schema mapper for OpenTelemetry GenAI spans, provider attributes, missing fields, dashboard schemas, and mapping receipts.",
+  "title": "GenAI Span Mapper MCP",
+  "description": "Paid remote MCP for OpenTelemetry GenAI span mapping, provider normalization, missing attribute detection, dashboard schemas, and mapping receipts.",
   "version": "1.0.0",
-  "website_url": "https://genaispanmapper.clauxel.com/",
-  "repository": {
-    "url": "https://github.com/clauxel/genai-span-mapper-mcp",
-    "source": "github"
-  },
+  "websiteUrl": "https://genaispanmapper.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/genai-span-mapper-mcp",
+  "serverCardUrl": "https://genaispanmapper.clauxel.com/server-card.json",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,17 +13,15 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website.",
-          "is_required": true,
-          "is_secret": true
+          "description": "Bearer token from the product website."
         }
       ]
     }
   ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "title": "GenAI Span Mapper MCP",
-      "server_card_url": "https://genaispanmapper.clauxel.com/server-card.json"
-    }
-  }
+  "tags": [
+    "opentelemetry",
+    "llm-observability",
+    "genai-spans",
+    "remote-mcp"
+  ]
 }
